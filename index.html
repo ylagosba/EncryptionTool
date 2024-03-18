@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/encript.png" type="image/x-icon"/>
+        <title>Encryption Tool</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logos">
+                <nav>
+                    <ul>
+                        <li><a href="https://www.aluracursos.com/"><img class="logos-img" src="images/Alura_logo.png" alt="Alura Latam Logo"></a></li>
+                        <li><a href="https://www.oracle.com/ar/education/oracle-next-education/"><img class="logos-img" src="images/ONE_logo.png" alt="Alura Latam Logo"></a></li>
+                        <li><h1 class="title">Encryption Tool Challenge</h1></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="">
+                
+            </div>
+        </header>
+
+        <main>
+            <section class="encryption-area">
+                <textarea oninput=removeChar() id="encrypted-text" class="input-field" placeholder="Message to encrypt, lowercase only no special characters"></textarea>
+                <div class="container-btn">
+                    <button class="btnEncryption" onclick="funcEncryption(), clean()">Encryption</button>
+                    <button class="btnDecryption" onclick="funcDecryption(), clean()" >Decryption</button>
+                </div>
+            </section>
+            <section class="result-area">
+                <textarea disabled id="result-text" class="result-field" placeholder="No message found"></textarea>
+                <div class="container-btn">
+                    <button id="btn-copy" class="btn-copy" onclick="">Copy Text</button>
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+
+        <footer>
+            <div class="socials">
+                <p class="footer-info">Yancis Lagos</p>
+                <p class="footer-info">Alura Latam & Oracle Next Education</p>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/ylagosba">
+                                    <img class="socials-img" src="images/Github_logo.png" alt="Github Logo">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/yancis-lagos/">
+                                    <img class="socials-img" src="images/Linkedin_logo.png" alt="LinkedIn Logo">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+            </div> 
+        </footer>
+    </body>
+
+</html>

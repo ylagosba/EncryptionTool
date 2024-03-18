@@ -1,0 +1,152 @@
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+header{
+    background-color: #FFFFFF;
+    padding: 10px 0;
+}
+
+.logos-img{
+    width: 100px;
+    padding: 4px;
+    float: left;
+}
+
+.title{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: #052051;
+    font-weight: bold;
+}
+
+/*MAIN*/
+main{
+    display: flex;
+}
+
+.encryption-area, .result-area{
+    background: #FEFEFE;
+    width: auto;
+    height: auto;
+    margin: 50px auto 50px auto;
+}
+
+.input-field, .result-field{
+    width: 600px;
+    height: 300px;
+    border-radius: 16px;
+    background-color: #FFF;
+    border: solid;
+    color: #356EA9;
+    padding: 2rem;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.result-area img{
+    width: 60%;
+}
+
+.container-btn{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+
+button {
+    border-radius: 16px;
+    background: #052051;
+    padding: 15px 20px;
+    width: 49%;
+    font-size: 24px;
+    border: solid;
+    margin-top: 2rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+button:hover{
+    border-radius: 16px;
+    background: #052051;
+    padding: 15px 20px;
+    width: 49%;
+    font-size: 24px;
+    font-weight: 700;
+    border: solid;
+    border-color: #356EA9;
+    margin-top: 2rem;
+    color: #FFFFFF;
+}
+
+.btn-copy{
+    display: none;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #356EA9;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+}
+
+.footer-info{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 10px;
+}
+
+.socials li{
+    display: inline-block;
+}
+
+.socials-img{
+    width: 30px;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+/*Phone Screen Responsiveness*/
+@media screen and (max-width:480px){
+    
+   .logos-img {
+        width: 100px;
+        padding-left: 60px;
+    }
+
+    .title{
+        font-size: 29px;
+    }
+    
+    .socials, main, .encryption-area, .result-area{
+        width: auto;
+        height: auto;
+        padding-left: 5px;
+        display:inline-block;
+        margin: 0 0 20px 0;
+    }
+    
+    header h1{
+        padding-top: 20px;
+        font-weight: 100px;
+    }
+    .input-field, .result-field{
+        width: 15em;
+        height: 10em;
+        border-radius: 16px;
+        background-color: #FFF;
+        border: solid;
+        color: #356EA9;
+        padding: 2em;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+    }
+}
